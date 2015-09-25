@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-github'
 
 group :development, :test do
   gem 'byebug'
