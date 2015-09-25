@@ -9,6 +9,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+gem 'omniauth-tumblr'
+gem 'omniauth-twitter'
+gem 'omniauth-linkedin'
+gem 'omniauth-instagram'
+gem 'omniauth-google-oauth2'
+
+
+
 
 group :development, :test do
   gem 'byebug'

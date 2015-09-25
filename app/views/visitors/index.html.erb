@@ -4,14 +4,12 @@ basdfblfbkasdfbjkb
 <p>here i'll put a bunch of links to auth with a bunch of services, okay?  cool</p>
 
 <% if user_signed_in? %>
-  <p>link1 (fake)</p>
-  <%= link_to 'Authenticate with Facebook', facebook_path %></li>
-  <%= link_to 'Authenticate with GitHub', github_path %></li>
-  <p>github</p>
-  <p>twitter</p>
+  <p><%= link_to 'Authenticate with Facebook', facebook_path %></li></p>
+  <p><%= link_to 'Authenticate with GitHub', github_path %></li></p>
+  <p><%= link_to 'Authenticate with Tumblr', tumblr_path %></li></p>
+  <p><%= link_to 'Authenticate with Twitter', twitter_path %></li></p>
   <p>instagram</p>
   <p>linked in</p>
-  <p>tumblr</p>
   <p>google</p>
 
 <% else %>
