@@ -11,9 +11,19 @@ class AuthenticationController < ApplicationController
   def twitter
     redirect_to '/auth/twitter'
   end
+  def linkedin
+    redirect_to '/auth/linkedin'
+  end
+  def instagram
+    redirect_to '/auth/instagram'
+  end
+  def google
+    redirect_to '/auth/google_oauth2'
+  end
 
   def facebook_callback
     auth = request.env["omniauth.auth"]
+
     if auth.provider == 'facebook'
       current_user.facebook_uid = auth['uid']
     elsif auth.provider == 'github'
@@ -24,7 +34,7 @@ class AuthenticationController < ApplicationController
       current_user.instagram_uid = auth['uid']
     elsif auth.provider == 'linkedin'
       current_user.linkedin_uid = auth['uid']
-    elsif auth.provider == 'google'
+    elsif auth.provider == 'google_oauth2'
       current_user.google_uid = auth['uid']
     elsif auth.provider == 'twitter'
       current_user.twitter_uid = auth['uid']
